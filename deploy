@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+rm -rf ~/.local/share/gnome-shell/extensions/pixel-saver@deadalnix.me
+cp -r pixel-saver@deadalnix.me ~/.local/share/gnome-shell/extensions/pixel-saver@deadalnix.me
+# Ask Gnome to restart
+dbus-send --type=method_call --print-reply --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'global.reexec_self()'
