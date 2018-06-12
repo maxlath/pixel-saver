@@ -249,8 +249,8 @@ let themeCallbackID = 0;
 
 function enable() {
 	loadTheme();
-	createButtons();
-	
+	// createButtons();
+
 	overviewCallbackIDs.push(Main.overview.connect('showing', updateVisibility));
 	overviewCallbackIDs.push(Main.overview.connect('hidden', updateVisibility));
 	
